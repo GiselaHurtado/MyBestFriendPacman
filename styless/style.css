@@ -8,7 +8,7 @@ body {
 
 .cabecera-imagenes {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .contenedor2 {
