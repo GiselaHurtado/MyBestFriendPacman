@@ -1,16 +1,28 @@
+
 body {
-   background-image: green;
+    background-image:url("images/fondo-pacman.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.contenedor1 {
+.cabecera-imagenes {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor2 {
+    display: flex;
+    justify-content: auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
     
 }
 
-#example1 {
-    background-image: url(img_flwr.gif), url(paper.gif);
-    background-position: right bottom, left top;
-    background-repeat: no-repeat, repeat;
-  }
-
-
-
+.fantasmito-image {
+    display: flex;
+    justify-content: flex-end;
+}
