@@ -12,8 +12,7 @@ body {
 }
 
 .contenedor2 {
-    display: flex;
-    justify-content: auto;
+    text-align: center;
 }
 
 h1 {
@@ -24,5 +23,6 @@ h1 {
 
 .fantasmito-image {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    margin-left: 30%;
 }
