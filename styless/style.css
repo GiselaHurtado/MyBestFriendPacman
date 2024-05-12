@@ -1,0 +1,16 @@
+body {
+   background-image: green;
+}
+
+.contenedor1 {
+    
+}
+
+#example1 {
+    background-image: url(img_flwr.gif), url(paper.gif);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+  }
+
+
+
