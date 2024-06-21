@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'TuFuentePersonalizada';
+    src: local('PacFont'), url('./Users/giselasoledadhurtado/Library/Fonts/PAC-FONT.TTF') format('PacFont');
+}
+
+body {
+    font-family: './Users/giselasoledadhurtado/Library/Fonts/PAC-FONT.TTF', PacFont;
+}
+
+
 
 body {
     background-image:url("images/fondo-pacman.jpg");
@@ -11,8 +21,9 @@ body {
     justify-content: space-around;
 }
 
-.contenedor2 {
-    text-align: center;
+#pacman {
+    display: flex;
+    justify-content:center;
 }
 
 h1 {
