@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'TuFuentePersonalizada';
+    src: local('PacFont'), url('./Users/giselasoledadhurtado/Library/Fonts/PAC-FONT.TTF') format('PacFont');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+.wrapper{
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    flex-direction: column;overflow: hidden;
+    background-color: #293447;
+    border-radius: 5px;
+    margin-left: 300px;
+}
+
+.game-details {
+    color: violet;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27 px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board {
+    width: 100%;
+    height: 100%;
+    background-color: #212837;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.play-board .ghost {
+    background-color: #ff003d;
+
+}
+
+.play-board .head {
+    background-color: violet;
+    
+}
+
+
+body {
+    background-image:url("./images/fondo-pacman.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: aliceblue;
+}
+
+.cabecera-imagenes {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+h1 {
+    font-family: './Users/giselasoledadhurtado/Library/Fonts/PAC-FONT.TTF', PacFont;
+    color: white;
+    text-align: center;   
+}
+
+
+
