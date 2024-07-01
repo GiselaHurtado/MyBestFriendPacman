@@ -23,13 +23,13 @@ const changeGhostPosition = () => {
 };
 
 const placeCherry = () => {
-  // Place cherry only if 3 ghosts have been eaten and score is less than 5000
+  
   if (ghostsEaten >= 3 && score < 5000) {
     cherryX = Math.floor(Math.random() * 30) + 1;
     cherryY = Math.floor(Math.random() * 30) + 1;
   } else {
     cherryX = null;
-    cherryY = null; // Reset cherry position if not applicable
+    cherryY = null; 
   }
 };
 
@@ -39,9 +39,9 @@ const handleGameOver = () => {
 };
 
 const changeDirection = (e) => {
-  if (gameOver) return; // Prevent movement when game is over
+  if (gameOver) return; 
 
-  // Update velocity based on key press
+  
   velocityX = 0;
   velocityY = 0; // Reset velocity on each key press
 
@@ -58,23 +58,23 @@ const changeDirection = (e) => {
 
 const initGame = () => {
   if (gameOver || score >= 5000) {
-    gameOver = true; // Trigger game over on reaching 5000 score
+    gameOver = true; 
     handleGameOver();
     return;
   }
-  // Only update Pacman's position when velocity is not zero
+  
   if (velocityX !== 0 || velocityY !== 0) {
     pacmanX += velocityX;
     pacmanY += velocityY;
   }
 
-  // Check for collisions and update score/high score
+ 
   if (pacmanX === ghostX && pacmanY === ghostY) {
     changeGhostPosition();
-    score += 100; // Award 100 points for ghost
-    ghostsEaten++; // Increment ghosts eaten count
+    score += 100; 
+    ghostsEaten++; 
 
-    placeCherry(); // Check and place cherry if needed
+    placeCherry(); 
   }
 
   if (cherryX !== null && cherryY !== null && pacmanX === cherryX && pacmanY === cherryY) {
@@ -100,6 +100,6 @@ const initGame = () => {
 
 
 changeGhostPosition();
-placeCherry(); // Place cherry initially if applicable
+placeCherry(); 
 document.addEventListener("keydown", changeDirection);
 setIntervalId = setInterval(initGame, 200);
